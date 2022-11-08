@@ -1,0 +1,8 @@
+Citar técnicas de testes de software, diferenças e aplicabilidade
+
+- Pode-se citar o teste de caixa branca que consiste em utilizar o código-fonte do sistema testado, com o objetivo de analisar as diversas partes do sistema, o fluxo de dados, a qualidade e segurança do código.
+- Existe também o teste de caixa preta, em contraste com a técnica anterior, não se tem conhecimento do código, apenas se analisa a entrada e a saída dos dados, focando no aspecto funcional do sistema, por isso esse tipo também é chamado de teste funcional.
+- Tem-se também o teste unitário que é a técnica mais básica de teste, pois a sua finalidade consiste em testar de forma isolada cada componente menor do sistema.
+- Em contra ponto a esta última técnica, existe o teste de integração que seria realizar testes com vários componentes e módulos integrados para descobrir se as funcionalidades funcionam juntas sem falhas.
+- Existe também o teste de regressão, considerado nas situações de implantações de novas versões do sistema, ou seja, testes de retrocompatibilidade com versões anteriores do sistema procurando por possíveis falhas
+- Pode-se mencionar também testes mais específicos não voltados para funcionalidade como teste de carga que verifica se o sistema suporta o processamento esperado para ele. Também o teste de estresse que busca verificar até que ponto o sistema suporta um processamento muito alto. Além do teste de usabilidade com a finalidade de verificar a aceitação para possíveis usuários do sistema.

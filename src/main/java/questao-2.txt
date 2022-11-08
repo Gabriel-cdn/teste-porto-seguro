@@ -1,0 +1,6 @@
+Comentar tipos de testes de software e suas finalidades
+
+- Os testes de software podem ser divididos praticamente em dois tipos: testes funcionais e testes não funcionais.
+- Como o próprio nome diz os testes funcionais tem como finalidade verificar as funcionalidades e a lógica de negócios planejada para o sistema, como por exemplo, testes unitários, de integração, caixa-preta e de regressão, mencionados na questão anterior.
+- Já os testes não funcionais são voltados para aspectos do sistema que não dependem das funções do sistema, como por exemplo, teste de usabilidade, desempenho, velocidade, carga, estresse, escalabilidade e segurança, também mencionados na questão anterior.
+- Pode-se mencionar também os testes manuais, cuja execução é feita de forma presencial por alguém a interagir no sistema, e os testes automatizados cuja execução é feito por uma máquina/computador. Existem os testes de api cujos passos dos testes usam apenas chamadas internas sem precisar de interface e pode-se falar também dos testes dirigidos a dados, cuja função é realizar o mesmo teste várias vezes, porém cada vez com um dado diferente.
