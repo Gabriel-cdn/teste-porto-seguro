@@ -104,13 +104,13 @@ public class DadosIniciaisFunc {
 
     public void validarPreenchimentoCampoTempoUsoSucesso(String tempoUso) throws Exception {
         new DadosIniciaisTela(getDriver())
-                .tocarTempoUso(tempoUso)
+                .clicarTempoUso(tempoUso)
                 .verificarTempoUsoSelecionado(tempoUso);
     }
 
     public void validarPreenchimentoCampoTempoUsoFalha(String mensagemErro) throws Exception {
         new DadosIniciaisTela(getDriver())
-                .tocarBotaoProximoPasso()
+                .clicarBotaoProximoPasso()
                 .verificarMensagemErroTempoUso(mensagemErro);
     }
 

@@ -54,7 +54,7 @@ public class TelaBase {
         }
     }
 
-    protected void tocarElemento(WebElement elemento) throws Exception {
+    protected void clicarElemento(WebElement elemento) throws Exception {
         try {
             elemento.click();
         } catch (Exception e) {

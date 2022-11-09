@@ -1,5 +1,8 @@
 package base;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -39,5 +42,12 @@ public class Util {
         if (matcher.matches()) celular = matcher.replaceAll("($1) $2-$3");
         len += 1 + (len > 2 ? 2 : 0) + (len > 7 ? 1 : 0);
         return celular.substring(0, len);
+    }
+
+    public static String randomChoiceNotEquals(String color, List<String> coresDiponiveis) {
+        ArrayList<String> cores = new ArrayList<>(coresDiponiveis);
+        cores.remove(color);
+        int num = new Random().nextInt(cores.size());
+        return cores.get(num);
     }
 }

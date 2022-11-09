@@ -33,7 +33,7 @@ public class DadosIniciaisTela extends TelaBase {
         Logger.logarPasso(String.format("Prenchendo campo %s com '%s'", nomeCampo, texto));
         By campoBy = new By.ByXPath(String.format(xpathCampoGenerico, nomeCampo));
         WebElement campo = retornarElemento(campoBy);
-        tocarElemento(campo);
+        clicarElemento(campo);
         apagarCampo(campo);
         digitarTexto(campo, texto);
         return this;
@@ -89,17 +89,17 @@ public class DadosIniciaisTela extends TelaBase {
     public DadosIniciaisTela aceitarCookies() throws Exception {
         Logger.logarPasso("Aceitando cookies");
         try {
-            tocarElemento(retornarElemento(new By.ByXPath(xpathAceitarCookies), 5));
+            clicarElemento(retornarElemento(new By.ByXPath(xpathAceitarCookies), 5));
         } catch (Exception ignore) {
         }
         return this;
     }
 
-    public DadosIniciaisTela tocarTempoUso(String tempoUso) throws Exception {
-        Logger.logarPasso(String.format("Tocando no Tempo de Uso %s", tempoUso));
+    public DadosIniciaisTela clicarTempoUso(String tempoUso) throws Exception {
+        Logger.logarPasso(String.format("Clicando no Tempo de Uso %s", tempoUso));
         String xpath = tempoUso.equals(TEMPO_USO_MENOR) ?
                 xpathTempoUsoMenorTexto : xpathTempoUsoMaiorTexto;
-        tocarElemento(retornarElemento(new By.ByXPath(xpath)));
+        clicarElemento(retornarElemento(new By.ByXPath(xpath)));
         return this;
     }
 
@@ -121,10 +121,10 @@ public class DadosIniciaisTela extends TelaBase {
         return this;
     }
 
-    public DadosIniciaisTela tocarBotaoProximoPasso() throws Exception {
-        Logger.logarPasso("Tocando botão 'Próximo Passo'");
+    public DadosIniciaisTela clicarBotaoProximoPasso() throws Exception {
+        Logger.logarPasso("Clicando botão 'Próximo Passo'");
         By campoBy = new By.ByXPath(xpathBotaoProximoPasso);
-        tocarElemento(retornarElemento(campoBy));
+        clicarElemento(retornarElemento(campoBy));
         return this;
     }
 }

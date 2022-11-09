@@ -5,6 +5,6 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/main/java/teste3/features", glue = "teste3.steps", tags = "@cenario1")
+@CucumberOptions(features = "src/main/java/teste3/features", glue = "teste3.steps")
 public class TestRunner {
 }
