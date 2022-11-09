@@ -30,5 +30,3 @@ Arquivo com o teste completo: [gabriel costa do nascimento-capgemini.zip](https:
 - Segui então com a implementação de cada passo usando o mesmo padrão de separar métodos de interação para cada página que seria acessado pelos testes dentro da pasta [telas](src/main/java/teste3/telas).
 - A classe [TestRunner.java](src/main/java/teste3/runner/TestRunner.java) executa os quatro cenário em série.
 - As interações com o banco de dados é feita através da classe [MySQLConnection.java](src/main/java/teste3/database/MySQLConnection.java) (para funcionar precisa trocar colocar a senha do banco).
-
-Foi divertido :)
