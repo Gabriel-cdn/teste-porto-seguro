@@ -4,8 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import teste1.base.Logger;
-import teste1.base.TelaBase;
+import base.Logger;
+import base.TelaBase;
 
 import static teste1.DadosIniciaisFunc.campoTempoUso;
 

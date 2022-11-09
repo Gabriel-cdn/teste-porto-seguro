@@ -1,4 +1,4 @@
-package teste1.base;
+package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,11 +10,13 @@ public class OperadorDriver {
     private static WebDriver driver;
 
     public static void startDriver() {
-        System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        if (driver == null) {
+            System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+            driver = new ChromeDriver();
+            driver.manage().window().maximize();
+            driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        }
     }
 
     public static WebDriver getDriver() {
@@ -23,6 +25,7 @@ public class OperadorDriver {
 
     public static void quitDriver() {
         driver.quit();
+        driver = null;
     }
 
     public static void acessarUrl(String url) {

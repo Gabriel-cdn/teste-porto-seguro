@@ -3,7 +3,7 @@ package teste1;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import teste1.base.OperadorDriver;
+import base.OperadorDriver;
 
 import static teste1.DadosIniciaisTela.TEMPO_USO_MAIOR;
 import static teste1.DadosIniciaisTela.TEMPO_USO_MENOR;

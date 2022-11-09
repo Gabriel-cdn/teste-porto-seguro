@@ -1,9 +1,9 @@
 package teste1;
 
-import teste1.base.Util;
+import base.Util;
 
-import static teste1.base.OperadorDriver.acessarUrl;
-import static teste1.base.OperadorDriver.getDriver;
+import static base.OperadorDriver.acessarUrl;
+import static base.OperadorDriver.getDriver;
 
 public class DadosIniciaisFunc {
 
